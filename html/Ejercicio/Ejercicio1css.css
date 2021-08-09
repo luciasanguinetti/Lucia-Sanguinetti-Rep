@@ -1,0 +1,19 @@
+.grid-container {
+    display: grid;
+    background-color: skyblue;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 1px;
+    column-gap: 1px;
+    row-gap: 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container div {
+    background-color: whitesmoke;
+    text-align: center white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 5px;
+}
