@@ -6,13 +6,12 @@
 
 body {
     display: grid;
-    grid-template-columns: 1 fr 2 fr 1 fr 1 fr;
-    grid-template-rows: 1 fr 1 fr 1 fr 1fr fr 1 fr;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
     grid-template-areas: "Header Header Header Header"
                          ". MainContent Sidebar ."
                          ". Twin1 Twin2 ."
                          "Footer Footer Footer Footer"
-height: 100vh
 }
 
 header {
