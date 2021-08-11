@@ -1,0 +1,50 @@
+body {
+    display: grid;
+    grid-template-columns: 1 fr 1 fr 1 fr 1 fr;
+    grid-template-rows: 1 fr 1 fr 1 fr 1fr 1 fr 1 fr;
+    grid-template-areas: "Header Header Header Header"
+                         "Blanco1 MainContent Sidebar Blanco2"
+                         "Blanco1 Twin1 Twin2 Blanco2"
+                         "Footer Footer Footer Footer"
+height: 100vh
+}
+
+header {
+    background-color: skyblue;
+    grid-area: Header;
+}
+
+aside {
+    background-color: white;
+    grid-area: Blanco1;
+}
+
+main {
+    background-color: greenyellow;
+    grid-area: MainContent;
+}
+
+aside {
+    background-color: violet;
+    grid-area: Sidebar;
+}
+
+aside {
+    background-color: white;
+    grid-area: Blanco2;
+}
+
+section {
+    background-color: orange;
+    grid-area: Twin1;
+}
+
+section {
+    background-color: orange;
+    grid-area: Twin2;
+}
+
+footer {
+    background-color: blue;
+    grid-area: Footer;
+}
