@@ -1,9 +1,36 @@
 * {
     margin:5px;
-    padding:5px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
 }
 
 .Contenedor {
-    background-color: skyblue;
-    color: skyblue;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+div {
+    margin: 30px;
+    padding: 20px;
+}
+
+section {
+    display: grid;
+    justify-items: center;
+}    
+
+img{
+    display:block;
+    margin:auto;
+    width: px;
+    background-size: cover;
+    }
+    
 }
