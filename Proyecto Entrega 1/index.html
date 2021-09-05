@@ -4,26 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Álvarez Bar</title>
+    <title>Inmigrantes Bar</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <script>
+        let edad = prompt("¿Qué edad tienes?");
+        edad = parseInt(edad);
+        let year = 2021 - edad
+        if(edad < 18) {
+            let mayorEdad = year + 18
+            document.write(`Eres menor de edad, no puedes pedir cocktails hasta ${mayorEdad}`)
+        } else if (edad > 18) {
+            document.write(`Eres mayor de edad, puedes pedir nuestros deliciosos cocktails`)
+        }
+    </script>
+
     <header>
-        <figure>
-            <img src="FALTA" alt="logo de restaurante" />
-        </figure>
-        <h1>INICIO</h1>
-        <h1>PEDIR</h1>
-        <h1>MENÚ</h1>
+        <nav>
+            <figure>
+               <img src="./Multimedia/Grupo 3515.png" alt="Logo Inmigrantes" width="100 px" height="100 px"/>
+            </figure>
+            <p><b>INICIO</b></p>
+            <p><b>PEDIR</b></p>
+            <p><b>MENÚ</b></p>
+            <p><b>ZONA DE ENVÍO</b></p>
+            <p><b>CONTACTO</b></p>
+        </nav>
+    <header>
+    
+    <section1>
+        <div class="banner">
+            <figure>
+                <img id = banner_imagen src="./Multimedia/Banner inmigrantes.png" alt="Imagen de banner">
+            </figure>
+            <div class="banner_info">
+                <h1>Inmigrantes Bar</h1>
+                <h1>Gastronomía y cocktails de calidad</h1>
+                <button class = "button pulse"> <b>PEDIR COMIDA<b></button>
+            </div>
+        </div>
+    </section1>
+
+    <main>
+        <div class="seccion_menu">
+            <h1>MENÚ</h1>
+            <br>
+            <p><b>SUSHI</b></p>
+            <br>
+            <ul>
+                <li>Niguiris (5 piezas) .....................$410</li>
+                <li>Sashimis (5 piezas) .....................$460</li>
+                <li>Geishas (5 piezas)  .....................$410</li>
+                <br>
+                <li>Philadelphia roll (8 piezas) ........... $380</li>
+                <li>New york roll (8 piezas) ................$380</li>
+                <li>Veggie roll (8 piezas) ..................$380</li>
+                <br>
+                <li>Salmón trufado roll (8 piezas) ..........$530</li>
+                <li>Cangrejo de rocha roll (8 piezas) .......$530</li>
+                <br>
+                <li>Tempura hot roll salmón (8 piezas).......$530</li>
+                <li>Panko roll de langostino (8 piezas)......$530</li>
+                <br>
+                <li>Combinado clásico (15 piezas) ...........$650</li>
+                <li>Combinado clásico (30 piezas) ...........$1150</li>
+                <br>
+                <p><b>COCKTAILS</b></p>
+                <br>
+                <li>Emigrante ...............................$220</li>
+                <li>Tristán .................................$220</li>
+                <li>El pistolero ............................$280</li>
+                <li>Maracanazo ..............................$330</li>
+                <li>Ilegal ..................................$300</li>
+                <li>No es changa ............................$280</li>
+                <li>Juana ...................................$220</li>
+                <li>Cuareim .................................$220</li>
+            </ul>
+        </div>
+    </main>
+
+    <section2 class="zona_envio">
         <h1>ZONA DE ENVÍO</h1>
-        <h1>CONTACTO</h1>
-        <br>
-        <h2>Pizzas 100% de masa madre</h2>
-        <br>
-        <title>ÁLVAREZ BAR</title>
-        <br>
-        <button>PEDIR COMIDA</button>
-    </header>
+        <figure>
+            <img class="zoom" src="./Multimedia/zona envio.png" alt="Zona de envío">
+        </figure>
+    </section2>
+
+    <footer>
+        <p>Dirección: Juan Paullier 1252</p>
+        <p>Telefono: +598 97 959 652</p>
+        <p>Registrarme:</p>
+        <div>
+            <form>
+                <label for="Nombre">
+                    <span>Nombre</span>
+                    <input type="text" name="Nombre" id="Nombre" required>
+                </label>
+                <label for="Apellido">
+                    <span>Apellido</span>
+                    <input type="text" name="Apellido" id="Apellido" required>
+                </label>
+                <label  for="Email">
+                    <span>Email</span>
+                    <input type="email" name="Email" id="Email" required>
+                </label>
+            </form>
+        </div>
+    </footer>
     
 </body>
 </html>
+
