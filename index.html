@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Dos</title>
+    <style type="text/css">
+        body {font-family: arial, helvetica;}
+    </style>    
+</head>
+<script>
+    function limita(elEvento, maximoCaracteres) {
+        let elemento = document.getElementById("texto");
+
+        let evento = elEvento;
+
+        if(elemento.value.length >= maximoCaracteres) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    
+     const actualizaInfo = (maximoCaracteres) => {
+        
+        const evento = elEvento;
+
+        while(elemento-)
+    }
+
+</script>
+<body>
+    <div id="info">Máximo 100 caracteres</div>
+    <textarea id="texto" onkeypress="return limita(event, 100);" onkeyup="actualizaInfo(100)" rows="6" cols="30"></textarea>
+</body>
+</html>
