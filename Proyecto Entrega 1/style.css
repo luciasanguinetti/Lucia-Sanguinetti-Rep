@@ -31,6 +31,20 @@ nav p {
     cursor: pointer;
 }
 
+/* .content {
+    padding: 16px;
+} */
+
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+} */
+  
+/* .sticky + .content {
+    padding-top: 102px;
+} */
+
 #banner_imagen {
     display:block;
     margin:auto;
@@ -105,7 +119,7 @@ nav p {
     margin: 40px;
 }
 
-#titulo_menu {
+.titulo_menu {
     justify-items: center;
     align-items: center;
     gap: 1rem;
@@ -114,7 +128,7 @@ nav p {
     color: var(--celeste);
 }
 
-#titulo_menu h1 {
+.titulo_menu h1 {
     font-size: 40px;
     text-align: center;
     gap: 1rem;

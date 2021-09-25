@@ -8,45 +8,22 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <script>
-        const edades = [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28] = prompt("¿Qué edad tenés?");
-        edad = parseInt(edad);
-        let year = 2021 - edad
-        
-        if(edad < 18) {
-            let mayorEdad = year + 18
-            document.write(`Sos menor de edad, no podés pedir cocktails hasta ${mayorEdad}`)
-        } else if (edad > 18) {
-            document.write(`Sos mayor de edad, podés pedir nuestros deliciosos cocktails`)
-        }
-
-        const mayoresEdad = edades.filter((item) => item >= 18);
-        console.log(mayoresEdad.reverse());
-        console.log(mayoresEdad);
-
-        const filtradoMayoresEdad = (productos) => {
-            return menores.filter((item)=> item.menores)
-        }
-
-        const mayorEdad = filtradoMayoresEdad (productos);
-
-        console.log(mayoresEdad)
-    </script>
-
-    <header>
+    <!-- Este sería el correcto con la función de header sticky
+    <header class="sticky" id="header"> -->
+    <header id="header">
         <nav>
             <figure>
                <img src="./Multimedia/Grupo 3515.png" alt="Logo Inmigrantes" width="100 px" height="100 px"/>
             </figure>
-            <p><b>INICIO</b></p>
-            <p><b>PEDIR</b></p>
-            <p><b>MENÚ</b></p>
-            <p><b>ZONA DE ENVÍO</b></p>
-            <p><b>CONTACTO</b></p>
+            <p><b><a href="#ir-a-inicio">INICIO</a></b></p>
+            <p><b><a href="#ir-a-menu">PEDIR</a></b></p>
+            <p><b><a href="#ir-a-menu">MENÚ</a></b></p>
+            <p><b><a href="#ir-a-envio">ZONA DE ENVÍO</a></b></p>
+            <p><b><a href="#ir-a-contacto">CONTACTO</a></b></p>
         </nav>
     <header>
     
-    <section1>
+    <section1 id="ir-a-inicio">
         <div class="banner">
             <figure>
                 <img id = banner_imagen src="./Multimedia/Banner inmigrantes.png" alt="Imagen de banner">
@@ -59,17 +36,53 @@
         </div>
     </section1>
 
-    <div id="titulo_menu">
+    <div class="titulo_menu" id="ir-a-menu">
         <h1>~~~~~~~~~ MENÚ ~~~~~~~~~</h1>
     </div>
 
     <main>
             <script>
+                const edades = [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28];
+                let edad = prompt("¿Qué edad tenés?")
+                let year = 2021 - edad
+
+                let mayorEdad = year + 18
+                if(edad < 18) {
+                    prompt(`Sos menor de edad, no podés pedir cocktails hasta ${mayorEdad}`)
+                } else if(edad => 18) {
+                    prompt(`Sos mayor de edad, podés pedir nuestros deliciosos cocktails`)
+                }
+
+/*              window.onscroll = function() {miFuncion()};
+                let header = document.getElementById("header");
+                let sticky = header.offsetTop;
+
+                function miFuncion() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                    }
+                } */
+
                 const productos = [
                 {
                 nombre: "Niguiri (5 piezas)",
                 precio: 410,
                 link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                /*              
+                Acá probé sustituir el link por 
+                
+                link: href= "https://drive.google.com/file/d/1k-SHALgriGQR5VMcT0HeZ-VRLeqO1BVi/view?usp=sharing" subiendo la imagen a Drive
+                
+                link: src= "././" buscando la imagen como lo hacemos en una etiqueta img 
+                
+                <a href="https://drive.google.com/file/d/1k-SHALgriGQR5VMcT0HeZ-VRLeqO1BVi/view?usp=sharing"></a> anclando a un link externo, ya sea drive o en el navegador
+                
+                <a href="https://habitue-img.s3.sa-east-1.amazonaws.com/imagenes/1616701760.SUSHI%202-min.jpg"></a> 
+                
+                Pero nada me funciona, todo me da error
+                */
                 menores: true,
                 },
                 {
@@ -187,6 +200,13 @@
                 menores: false,
                 },
                 ];
+                
+                let productoFiltrado = productos;
+                if(edad < 18) {
+                    productoFiltrado = productos.filter((item)=> item.menores)
+                }
+
+                console.log(productoFiltrado)
 
                 const main = document.getElementsByTagName("main")[0];
 
@@ -218,33 +238,17 @@
             </script>
     </main>
 
-    <section2 class="zona_envio">
+    <section2 class="zona_envio" id="ir-a-envio">
         <h1>ZONA DE ENVÍO</h1>
         <figure>
             <img class="zoom" src="./Multimedia/zona envio.png" alt="Zona de envío">
         </figure>
     </section2>
 
-    <footer>
+    <footer class="footer" id="ir-a-contacto">
         <p>Dirección: Juan Paullier 1252</p>
         <p>Telefono: +598 97 959 652</p>
         <p>Proveedor tecnológico: Habitué</p>
-        <div>
-            <!-- <form>
-                <label for="Nombre">
-                    <span>Nombre</span>
-                    <input type="text" name="Nombre" id="Nombre" required>
-                </label>
-                <label for="Apellido">
-                    <span>Apellido</span>
-                    <input type="text" name="Apellido" id="Apellido" required>
-                </label>
-                <label  for="Email">
-                    <span>Email</span>
-                    <input type="email" name="Email" id="Email" required>
-                </label>
-            </form> -->
-        </div>
     </footer>
     
 </body>
