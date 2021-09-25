@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- Este sería el correcto con la función de header sticky
-    <header class="sticky" id="header"> -->
     <header id="header">
         <nav>
             <figure>
@@ -42,161 +40,136 @@
 
     <main>
             <script>
-                const edades = [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28];
                 let edad = prompt("¿Qué edad tenés?")
+                
                 let year = 2021 - edad
 
                 let mayorEdad = year + 18
                 if(edad < 18) {
-                    prompt(`Sos menor de edad, no podés pedir cocktails hasta ${mayorEdad}`)
-                } else if(edad => 18) {
-                    prompt(`Sos mayor de edad, podés pedir nuestros deliciosos cocktails`)
-                }
-
-/*              window.onscroll = function() {miFuncion()};
-                let header = document.getElementById("header");
-                let sticky = header.offsetTop;
-
-                function miFuncion() {
-                if (window.pageYOffset > sticky) {
-                    header.classList.add("sticky");
+                    alert(`Sos menor de edad, no podés pedir cocktails hasta ${mayorEdad}`)
                 } else {
-                    header.classList.remove("sticky");
-                    }
-                } */
+                    alert(`Sos mayor de edad, podés pedir nuestros deliciosos cocktails`)
+                }
 
                 const productos = [
                 {
                 nombre: "Niguiri (5 piezas)",
                 precio: 410,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
-                /*              
-                Acá probé sustituir el link por 
-                
-                link: href= "https://drive.google.com/file/d/1k-SHALgriGQR5VMcT0HeZ-VRLeqO1BVi/view?usp=sharing" subiendo la imagen a Drive
-                
-                link: src= "././" buscando la imagen como lo hacemos en una etiqueta img 
-                
-                <a href="https://drive.google.com/file/d/1k-SHALgriGQR5VMcT0HeZ-VRLeqO1BVi/view?usp=sharing"></a> anclando a un link externo, ya sea drive o en el navegador
-                
-                <a href="https://habitue-img.s3.sa-east-1.amazonaws.com/imagenes/1616701760.SUSHI%202-min.jpg"></a> 
-                
-                Pero nada me funciona, todo me da error
-                */
+                link: "./Multimedia/Niguiri.jpg",
                 menores: true,
                 },
                 {
                 nombre: "Sashimis (5 piezas)",
                 precio: 460,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/Sashimi.jpg",
                 menores: true,
                 },
                 {
                 nombre: "Geishas (5 piezas)",
                 precio: 410,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/Geishas.jpg",
                 menores: true,
                 },
                 {
                 nombre: "Philadelphia roll (8 piezas)",
                 precio: 380,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/Philadeplhia.jpg",
                 menores: true,
                 },
                 {
                 nombre: "New york roll (8 piezas)",
                 precio: 380,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/new york.jpg",
                 menores: true,
                 },
                 {
                 nombre: "Veggie roll (8 piezas)",
                 precio: 380,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/veggie roll.jpeg",
                 menores: true,
                 },
                 {
                 nombre: "Salmón trufado roll (8 piezas)",
                 precio: 530,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/salmón trufado.jpg",
                 menores: true,
                 },
                 {
                 nombre: "Cangrejo de rocha roll (8 piezas)",
                 precio: 530,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/cangrejo de rocha.jpg",
                 menores: true,
                 },
                 {
                 nombre: "Tempura hot roll salmón (8 piezas)",
                 precio: 530,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/tempura hot roll.jpg",
                 menores: true,
                 },
                 {
                 nombre: "Panko roll de langostino (8 piezas)",
                 precio: 530,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/panko roll de langostino.jpg",
                 menores: true,
                 },
                 {
                 nombre: "Combinado clásico (15 piezas)",
                 precio: 650,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/combinado clasico 15 piezas.jpg",
                 menores: true,
                 },
                 {
                 nombre: "Combinado clásico (30 piezas)",
                 precio: 1150,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/combinado clasico 30 piezas.jpg",
                 menores: true,
                 },
                 {
                 nombre: "Emigrante",
                 precio: 220,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/Emigrante.jpg",
                 menores: false,
                 },
                 {
                 nombre: "Tristán",
                 precio: 220,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/Tristán.jpg",
                 menores: false,
                 },
                 {
                 nombre: "El pistolero",
                 precio: 280,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/El pistolero.jpg",
                 menores: false,
                 },
                 {
                 nombre: "Maracanazo",
                 precio: 330,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/Maracanazo.jpg",
                 menores: false,
                 },
                 {
                 nombre: "Ilegal",
                 precio: 300,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/Ilegal.jpg",
                 menores: false,
                 },
                 {
                 nombre: "No es changa",
                 precio: 260,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/No es changa.jpg",
                 menores: false,
                 },
                 {
                 nombre: "Juana",
                 precio: 220,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/Juana.jpg",
                 menores: false,
                 },
                 {
                 nombre: "Cuareim",
                 precio: 220,
-                link: "https://images.unsplash.com/photo-1598578273254-cf2b91351d56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+                link: "./Multimedia/Cuareim.jpg",
                 menores: false,
                 },
                 ];
@@ -207,6 +180,7 @@
                 }
 
                 console.log(productoFiltrado)
+                console.log(productos);
 
                 const main = document.getElementsByTagName("main")[0];
 
@@ -224,7 +198,6 @@
                     contenedorProducto.classList.add("producto");
                     nombreProducto.textContent = producto.nombre;
 
-
                     imagenProducto.setAttribute("src", producto.link);
                     imagenProducto.setAttribute("alt", producto.nombre);
 
@@ -232,8 +205,8 @@
                     main.appendChild(contenedorProducto);
                 }
 
-                for (let i = 0; i < productos.length; i++) {
-                    crearYAgregarProducto(productos[i]);
+                for (let i = 0; i <productoFiltrado.length; i++) {
+                    crearYAgregarProducto(productoFiltrado[i]);
                 }
             </script>
     </main>
