@@ -177,21 +177,6 @@ main p {
     font-size: 30px;
 }
 
-.zona_envio img {
-    width: 100%;
-    cursor: pointer;
-}
-
-.zoom {
-    padding: 50px;
-    transition: transform .2s;
-    margin: 0 auto;
-}
-
-.zoom:hover {
-    transform: scale(1.3);
-}
-
 footer {
     display: grid;
     justify-items: center;
