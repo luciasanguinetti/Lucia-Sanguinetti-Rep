@@ -1,4 +1,4 @@
-# FSD4 Entrega 2 Proyecto Lucía Sanguinetti
+# FSD4 Entrega 3 Proyecto Lucía Sanguinetti
 
 ## Descripción
 Repositorio del curso FSD4 - Senpai Academy / Entrega 2 Proyecto Lucia Sanguinetti: NODEJs
@@ -21,4 +21,13 @@ Mejorar html y css a través de react
 Agregar página con información de pago y verificación del pedido
 
 ## NOTA
-Si bien sé que no se deben dejar los comentarios dentro del código, en esta etapa me sirven como ayuda memoria para recordar qué estoy buscando lograr en cada línea del código.
+CÉSAR Y CONI:
+
+Lejos de excusarme quise escribirles esto para aclararles que, si bien creía que era posible, no pude dar lo mejor de mi en estos 2 días que estuve en Uruguay para completar la entrega como me hubiera gustado.
+
+Suelo ser mucho más autoexigente conmigo misma y no conformarme con el mínimo indispensable pero en esta oportunidad prioricé mis vacaciones y mi descanso y con total frustración realmente solo espero llegar a un puntaje que me alcance para aprobar el curso.
+
+Planeo este año retomar todo lo aprendido en el curso con más tranquilidad para poder ponerlo en práctica en mi trabajo con la guía de mis compañeros de trabajo desarrolladores y realmente fijar los conocimientos.
+
+Les pido disculpas desde por mi entrega que sé que está incompleta y que, por el tiempo y entrega que ambos nos han dedicado en el curso, se merecen una entrega de mi parte mucho mejor.
+

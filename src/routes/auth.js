@@ -5,6 +5,8 @@ const jwt = require("jsonwebtoken");
 
 const { TOKEN_SECRET, verifyToken } = require("../middleware/jw-validate");
 
+const db = require("backend/db");
+
 // Registro con control de nombre, mail y contraseña
 router.post("/registro", async (req, res, next) => {
   try {
